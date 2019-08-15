@@ -1,14 +1,14 @@
 $(function() {
   "use strict";
 
-  var nav_offset_top = $('header').height() + 50; 
+  var nav_offset_top = $('header').height() + 50;
     /*-------------------------------------------------------------------------------
-	  Navbar 
+	  Navbar
 	-------------------------------------------------------------------------------*/
     function navbarFixed(){
-        if ( $('.header_area').length ){ 
+        if ( $('.header_area').length ){
             $(window).scroll(function() {
-                var scroll = $(window).scrollTop();   
+                var scroll = $(window).scrollTop();
                 if (scroll >= nav_offset_top ) {
                     $(".header_area").addClass("navbar_fixed");
                 } else {
@@ -76,13 +76,13 @@ $(function() {
 
 
   /*-------------------------------------------------------------------------------
-	  Mailchimp 
+	  Mailchimp
 	-------------------------------------------------------------------------------*/
 	function mailChimp() {
 		$('#mc_embed_signup').find('form').ajaxChimp();
 	}
   mailChimp();
-  
+
 });
 
 var canvas = document.getElementById('nokey'),
@@ -110,7 +110,7 @@ var ball = {
    balls = [],
    alpha_f = 0.03,
    alpha_phase = 0,
-    
+
 // Line
    link_line_width = 0.8,
    dis_limit = 260,
@@ -227,23 +227,23 @@ function updateBalls(){
     Array.prototype.forEach.call(balls, function(b){
         b.x += b.vx;
         b.y += b.vy;
-        
+
         if(b.x > -(50) && b.x < (can_w+50) && b.y > -(50) && b.y < (can_h+50)){
            new_balls.push(b);
         }
-        
+
         // alpha change
         b.phase += alpha_f;
         b.alpha = Math.abs(Math.cos(b.phase));
         // console.log(b.alpha);
     });
-    
+
     balls = new_balls.slice(0);
 }
 
 // loop alpha
 function loopAlphaInf(){
-    
+
 }
 
 // Draw lines
@@ -251,15 +251,15 @@ function renderLines(){
     var fraction, alpha;
     for (var i = 0; i < balls.length; i++) {
         for (var j = i + 1; j < balls.length; j++) {
-           
+
            fraction = getDisOf(balls[i], balls[j]) / dis_limit;
-            
+
            if(fraction < 1){
                alpha = (1 - fraction).toString();
 
                ctx.strokeStyle = 'rgba(150,150,150,'+alpha+')';
                ctx.lineWidth = link_line_width;
-               
+
                ctx.beginPath();
                ctx.moveTo(balls[i].x, balls[i].y);
                ctx.lineTo(balls[j].x, balls[j].y);
@@ -274,7 +274,7 @@ function renderLines(){
 function getDisOf(b1, b2){
     var  delta_x = Math.abs(b1.x - b2.x),
        delta_y = Math.abs(b1.y - b2.y);
-    
+
     return Math.sqrt(delta_x*delta_x + delta_y*delta_y);
 }
 
@@ -288,15 +288,15 @@ function addBallIfy(){
 // Render
 function render(){
     ctx.clearRect(0, 0, can_w, can_h);
-    
+
     renderBalls();
-    
+
     renderLines();
-    
+
     updateBalls();
-    
+
     addBallIfy();
-    
+
     window.requestAnimationFrame(render);
 }
 
@@ -318,7 +318,7 @@ function initBalls(num){
 function initCanvas(){
     canvas.setAttribute('width', window.innerWidth);
     canvas.setAttribute('height', window.innerHeight);
-    
+
     can_w = parseInt(canvas.getAttribute('width'));
     can_h = parseInt(canvas.getAttribute('height'));
 }
@@ -357,24 +357,3 @@ canvas.addEventListener('mousemove', function(e){
     mouse_ball.y = e.pageY;
     // console.log(mouse_ball);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
