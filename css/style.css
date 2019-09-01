@@ -458,6 +458,14 @@ h3,
 	transition: all ease 0.5s;
 }
 
+.service-block p{
+  position: absolute;
+	top: 75%;
+  left: 5%;
+  color: rgb(0, 186, 64);
+  font-family:Altis-Bold,-apple-system,BlinkMacSystemFont,Segoe UI, Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue, sans-serif;
+}
+
 .service-block:hover{
 	cursor: pointer;
 }
@@ -475,8 +483,8 @@ h3,
   transition-property: transform;
 }
 .shrink-on-hover:hover, .shrink-on-hover:focus, .shrink-on-hover:active {
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
+  -webkit-transform: scale(0.97);
+  transform: scale(0.97);
 }
 
 @keyframes rotateme {
@@ -567,6 +575,44 @@ h3,
     -o-animation-timing-function: linear;
 }
 
+.section-adv:before{
+    animation-name: rotateme;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+	-webkit-animation-name: rotateme;
+    -webkit-animation-duration: 24s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+	-moz-animation-name: rotateme;
+    -moz-animation-duration: 24s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+	-ms-animation-name: rotateme;
+    -ms-animation-duration: 24s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+	-o-animation-name: rotateme;
+    -o-animation-duration: 24s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+
+.section-adv:before{
+		position: absolute;
+    content: '';
+    left: -70px;
+    top: 390vh;
+    width: 335px;
+    height: 384px;
+    display: inline-block;
+    background: url(../img/icon-1.png) no-repeat;
+		z-index: 99;
+}
 
 .section-dev:before{
 		position: absolute;
@@ -617,7 +663,7 @@ h3,
 	color: #fff;
 	font-size: 1.5rem;
 	position: absolute;
-	top: 15%;
+	top: 17%;
 	font-weight: 700;
 	font-family:Altis-Bold,-apple-system,BlinkMacSystemFont,Segoe UI, Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue, sans-serif;
 }
@@ -1543,7 +1589,7 @@ h3,
 }
 
 .section-intro__subtitle {
-	font-size: 15px;
+	font-size: 1rem;
 	color: #797979;
 	margin-bottom: 0
 }
@@ -1875,6 +1921,32 @@ h3,
 		margin: 0 10px;
 		padding: 20px;
 	}
+
+	.section-contacts-bg{
+		border-radius: 100px;
+	}
+}
+
+.relax-img{
+	position: relative;
+}
+
+.soft-img{
+	position: relative;
+}
+
+.soft-img img{
+	position: absolute;
+	right: 100px;
+	top: -270px;
+	width: 150px;
+}
+
+.relax-img img{
+	position: absolute;
+	right: 0;
+	top: 20px;
+	width: 200px;
 }
 
 .our_major_cause .card {
@@ -1888,12 +1960,140 @@ h3,
 	.our_major_cause .card .card-body {
 		padding: 5px
 	}
+
+	.relax-img img{
+		width: 120px;
+		right: 20px;
+		top: 40px;
+	}
+
+	.soft-img img{
+		right: 20px;
+		width: 80px;
+		top: -30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.soft-img img{
+		right: 20px;
+		width: 100px;
+		top: -60px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.soft-img img{
+		right: 40px;
+		width: 150px;
+		top: -240px;
+	}
+}
+
+@media (max-width: 992px) {
+	.soft-img img{
+		right: 0px;
+		width: 120px;
+		top: -100px;
+	}
+}
+
+@media (max-width: 375px) {
+	.soft-img img{
+		right: 10px;
+		width: 80px;
+		top: -20px;
+	}
+}
+
+
+.status{
+	border: 1px solid red;
+	display: none;
 }
 
 .our_major_cause .card figure {
 	overflow: hidden;
 	margin: 0
 }
+
+.adv-img1{
+	background: url('../img/cloud-native.jpg') no-repeat center/cover;
+	transition: all ease 0.7s;
+}
+
+.adv-img2{
+	background: url('../img/pm-diagram.jpg') no-repeat center/cover;
+}
+
+.adv-img3{
+	background: url('../img/technology.webp') no-repeat center/cover;
+}
+
+.info h1{
+	color:rgb(137, 151, 156);
+	font-size: 10rem;
+	font-weight: 700;
+	font-family:Altis-Bold,-apple-system,BlinkMacSystemFont,Segoe UI, Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue, sans-serif;
+}
+
+.info span{
+	color:#171c1f;
+}
+
+@media screen and (max-width: 768px){
+	.info h1{
+		font-size: 8rem;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.info h1{
+		font-size: 6rem;
+	}
+}
+
+.adv-info h3{
+	font-size: 0.8rem;
+	margin-bottom: 30px;
+  letter-spacing: 2px;
+	font-family:Altis-Bold,-apple-system,BlinkMacSystemFont,Segoe UI, Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue, sans-serif;
+}
+
+.adv-info h2{
+	margin-bottom: 50px;
+	font-size: 5rem;
+	line-height: 1;
+	font-weight: 700;
+	font-family:Altis-Bold,-apple-system,BlinkMacSystemFont,Segoe UI, Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue, sans-serif;
+}
+
+@media screen and (max-width: 500px){
+	.adv-info h2{
+		font-size: 3rem;
+		}
+}
+
+.adv-info p{
+	font-size: 1rem;
+	font-family:'Montserrat', sans-serif;
+}
+
+.adv-info div{
+	width: 100%;
+}
+
+.adv-img img{
+	width: 90%;
+}
+
+.green{
+	color: rgb(0, 186, 64);
+}
+
+
+
+
 
 .our_major_cause .card figure img {
 	-webkit-transition: all 0.3s ease 0s;
