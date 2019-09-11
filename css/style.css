@@ -9,6 +9,19 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     transition: all 0.225s ease;
 }
 
+.swift img{
+	height: 80px;
+}
+
+.spring img{
+	height: 90px;
+}
+
+.python img{
+	height: 90px;
+}
+
+
 .styled-input {
     float: left;
     width: 293px;
@@ -117,6 +130,58 @@ input[type=checkbox] + label {
 input[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal;
+}
+
+.close{
+	margin-left: 0 !important;
+}
+.modal-header{
+	background-color: #171c1f;
+}
+.modal-body{
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+	font-size: 17px;
+	position: relative;
+}
+.modal-body-img img{
+	width: 100px;
+	opacity: 0.4;
+}
+.modal-body-img{
+	position: absolute;
+}
+.modal-body p{
+	position: relative;
+}
+.modal-header h5{
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 0;
+	margin: 0 auto !important;
+	letter-spacing: 3px;
+	text-align: center;
+}
+#modal1{
+	left: 28%;
+}
+#modal2{
+	left: 16%;
+}
+#modal3{
+	left: 25%;
+}
+#modal3 img{
+	width: 120px;
+}
+#modal4{
+	left: 35%;
+}
+#modal4 img{
+	width: 120px;
+}
+
+#adv-img{
+	width: 80%;
 }
 
 .section-contacts{
@@ -814,6 +879,7 @@ h3,
 		border-radius: 0px;
 		box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.4)
 	}
+	
 }
 
 @media screen and (max-width: 992px){
@@ -822,6 +888,15 @@ h3,
 		top: 0% !important;
 		margin-bottom: 30px;
 		font-weight: bold;
+	}
+	.adv-info h2, p{
+		text-align: center !important;
+	}
+	.adv-img img{
+		width: 100% !important;
+	}
+	#adv-img{
+		width: 90% !important;
 	}
 
 	nav{
@@ -1410,6 +1485,15 @@ h3,
 	.banner_btn {
 		margin-bottom: 20px
 	}
+	#modal1{
+		left: 23%;
+	}
+	#modal2{
+		left: 14%;
+	}
+	#modal4{
+		left: 32%;
+	}
 }
 
 .parallax{
@@ -1994,7 +2078,25 @@ h3,
 	.soft-img img{
 		right: 0px;
 		width: 120px;
-		top: -100px;
+		top: -70px;
+	}
+	.content-img img{
+		width: 65px;
+	}
+}
+@media (max-width: 430px){
+	.soft-img img{
+		top: -45px;
+	}
+
+	#modal1{
+		left: 20%;
+	}
+	#modal2{
+		left: 11%;
+	}
+	#modal3{
+		left: 19%;
 	}
 }
 
@@ -2002,7 +2104,19 @@ h3,
 	.soft-img img{
 		right: 10px;
 		width: 80px;
-		top: -20px;
+		top: -50px;
+	}
+	#modal1{
+		left: 18%;
+	}
+	#modal2 img{
+		width: 90px;
+	}
+	#modal3{
+		left: 15%;
+	}
+	#modal4{
+		left: 28%;
 	}
 }
 
@@ -2032,26 +2146,68 @@ h3,
 
 .info h1{
 	color:rgb(137, 151, 156);
-	font-size: 10rem;
+	font-size: 5rem;
 	font-weight: 700;
 	font-family:Altis-Bold,-apple-system,BlinkMacSystemFont,Segoe UI, Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue, sans-serif;
+}
+#tag-name{
+	font-size: 5rem !important;
 }
 
 .info span{
 	color:#171c1f;
 }
-
+@media screen and (max-width: 992px){
+	#tag-name{
+		font-size: 4.5rem !important;
+	}
+}
+@media screen and (max-width: 900px){
+	#tag-name{
+		font-size: 4.25rem !important;
+	}
+}
+@media screen and (max-width: 845px){
+	#tag-name{
+		font-size: 4rem !important;
+	}
+}
 @media screen and (max-width: 768px){
 	.info h1{
-		font-size: 8rem;
+		font-size: 6.5rem;
+	}
+	#tag-name{
+		font-size: 3.25rem !important;
+	}
+}
+@media screen and (max-width: 675px){
+	#tag-name{
+		font-size: 3rem !important;
+	}
+	.info h1{
+		font-size: 5.75rem;
+	}
+}
+@media screen and (max-width: 600px){
+	#tag-name{
+		font-size: 2.75rem !important;
+	}
+}
+@media screen and (max-width: 570px){
+	#tag-name{
+		font-size: 2rem !important;
+	}
+	.info h1{
+		font-size: 5rem;
 	}
 }
 
 @media screen and (max-width: 400px){
 	.info h1{
-		font-size: 6rem;
+		font-size: 4.25rem;
 	}
 }
+
 
 .adv-info h3{
 	font-size: 0.8rem;
@@ -2071,7 +2227,20 @@ h3,
 @media screen and (max-width: 500px){
 	.adv-info h2{
 		font-size: 3rem;
-		}
+	}
+	#tag-name{
+		font-size: 2rem !important;
+	}
+}
+@media screen and (max-width: 399px){
+	#tag-name{
+		font-size: 1.75rem !important;
+	}
+}
+@media screen and (max-width: 360px){
+	#tag-name{
+		font-size: 1.5rem !important;
+	}
 }
 
 .adv-info p{
@@ -2085,8 +2254,8 @@ h3,
 
 .adv-img img{
 	width: 90%;
+	border-radius: 20px;
 }
-
 .green{
 	color: rgb(0, 186, 64);
 }

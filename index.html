@@ -45,7 +45,7 @@
               <li class="nav-item"><a class="nav-link" onclick="slowScroll('#s3')">Start Your Project</a></li>
               <li class="nav-item"><a class="nav-link" onclick="slowScroll('#s4')">Contacts</a></li>
               <li class="nav-item contacts"></li>
-              <li class="nav-item rus"><a class="nav-link" href="#">Русский</a></li>
+              <li class="nav-item rus"><a class="nav-link" href="ru/index.html">Русский</a></li>
             </ul>
           </div>
         </div>
@@ -142,7 +142,83 @@
 
         <div class="container">
           <div class="row service">
-            <div class="col-md-6 service-block shrink-on-hover service-img1" >
+              <div class="modal fade" id="modal-window1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5>MOBILE APP DEVELOPMENT</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body-img" id="modal1">
+                          <img src="img/android.png" alt="">
+                          <img src="img/xcode.png" alt="">
+                        </div>
+                      <p class="text-center">We provide professional services on development of mobile applications - from small business apps to applications for entertainment and recreation.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade modal-window2" id="modal-window2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5>SOFTWARE DEVELOPMENT</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body-img" id="modal2">
+                          <img src="img/idea.png" alt="">
+                          <img src="img/web.png" alt="">
+                          <img src="img/py.png" alt="">
+                        </div>
+                      <p class="text-center">We are ready to provide professional development of web-sites of any level - from very simple business card sites to develop very complicated unique projects.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal-window3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5>AUTHOMATIZATION OF BUSINESS PROCESSES</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body-img" id="modal3">
+                          <img src="img/service-1.png" alt="">
+                          <img src="img/service-2.png" alt="">
+                        </div>
+                      <p class="text-center">Business automatization - it is the way for efficiency. To create effective management in the company it is only possible through the rethought documentary management, corporate content, tasks and business processes integrating special designed programs.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="modal fade" id="modal-window4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5>TECHNICAL SUPPORT</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <div class="modal-body-img" id="modal4">
+                            <img src="img/service-3.png" alt="">
+                          </div>
+                        <p class="text-center">Relying your site for the support into our specialists' hands, You get rid of problems, related to information update and to control resources maintenance.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <div class="col-md-6 service-block shrink-on-hover service-img1" data-toggle="modal" data-target="#modal-window1">
               <div class="content">
                 <p>Programming</p>
                 <h2>Mobile App Development</h2>
@@ -152,7 +228,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 service-block shrink-on-hover service-img2">
+            <div class="col-md-6 service-block shrink-on-hover service-img2" data-toggle="modal" data-target="#modal-window2">
               <div class="content">
                 <p>Technology</p>
                 <h2>Software Development</h2>
@@ -163,7 +239,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 service-block shrink-on-hover service-img3">
+            <div class="col-md-6 service-block shrink-on-hover service-img3" data-toggle="modal" data-target="#modal-window3">
               <div class="content">
                 <p>Services</p>
                 <h2>Authomatization of business processes</h2>
@@ -172,7 +248,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 service-block shrink-on-hover service-img4">
+            <div class="col-md-6 service-block shrink-on-hover service-img4" data-toggle="modal" data-target="#modal-window4">
               <div class="content">
                 <p>24/7</p>
                 <h2>Technical support</h2>
@@ -279,9 +355,6 @@
 			</div>
 		  </div>
 
-		  
-
-
 
 
 		</div>
@@ -304,7 +377,7 @@
 		  </div>
 
 		  <div class="col-lg-2 col-md-6 offer-single">
-			<div class="text-center">
+			<div class="text-center spring">
 			  <span class="offer-single__icon">
 				<img src="img/spring-3-logo-png-transparent.png" alt="" width="80">
 			  </span>
@@ -314,7 +387,7 @@
 		  </div>
 
 		  <div class="col-lg-2 col-md-6 offer-single">
-			<div class="text-center">
+			<div class="text-center python">
 			  <span class="offer-single__icon">
 				<img src="img/icons/python_mAD6bwr.png" alt="" width="80">
 			  </span>
@@ -356,7 +429,7 @@
 		  </div>
 
 		  <div class="col-lg-2 col-md-6 offer-single">
-			<div class="text-center">
+			<div class="text-center swift">
 			  <span class="offer-single__icon">
 				<img src="img/icons/swift.png" alt="" width="80">
 			  </span>
@@ -364,18 +437,6 @@
 
 			</div>
 		  </div>
-
-		  <div class="col-lg-2 col-md-6 offer-single">
-			<div class="text-center">
-			  <span class="offer-single__icon">
-				<img src="img/icons/Objective_C.png" alt="" width="80">
-			  </span>
-			  <h4>Objective-C</h4>
-
-			</div>
-		  </div>
-
-
 		</div>
 
        <div class="row offer-single-wrapper">
@@ -457,13 +518,16 @@
     </section> -->
 
     <section class="mb-5">
-      <div class="container">
+      <div class="container-fluid">
   		<div class="row text-center justify-content-center">
 
         <div class="col-lg-12 pt-5">
     			<div class="info">
     			  <h1>We don’t just think. <br>
               <span>We do.</span></h1>
+              <br>
+            <h1 id="tag-name">#LiveinOshWorkwiththe<br></h1>
+            <h1><span>World</span></h1>
     			</div>
   		  </div>
   		  <!-- <div class="col-lg-5 home-bg">
@@ -488,7 +552,7 @@
 
           <div class="col-lg-6 pt-5">
       			<div class="adv-img">
-      			  <img src="img/moment.png" alt="">
+      			  <img src="img/team-strength.gif" id="adv-img" alt="">
       			</div>
     		  </div>
     		  <!-- <div class="col-lg-5 home-bg">
@@ -509,7 +573,7 @@
 
           <div class="col-lg-6 pt-5">
       			<div class="adv-img">
-      			  <img src="img/image-1.png" alt="">
+      			  <img src="img/value-driven.gif" alt="">
       			</div>
     		  </div>
     		  <!-- <div class="col-lg-5 home-bg">
@@ -528,9 +592,9 @@
       			</div>
     		  </div>
 
-          <div class="col-lg-6 pt-5">
+          <div class="col-lg-6 pt-5 adv-block">
       			<div class="adv-img">
-      			  <img style="position:relative; top: -100px;" class="pl-5 mt-5" src="img/384.png" alt="">
+      			  <img style="position:relative; top: -100px;" class="pl-5 mt-5" src="img/animation-blocks.gif" alt="">
       			</div>
     		  </div>
     		  <!-- <div class="col-lg-5 home-bg">
@@ -546,7 +610,7 @@
         <form action="https://formspree.io/karimovaakylai@gmail.com" method="POST">
       	  <div class="row input-container">
             <div class="col-xs-12 col-sm-12 text-center">
-              <h2 style="color: #3a414e; margin-bottom: 2rem;">Ready to get started?</h2>
+              <h2 style="color: #121213; margin-bottom: 2rem;">Ready to get started?</h2>
             </div>
 
       			<div class="col-xs-12 col-sm-12">
